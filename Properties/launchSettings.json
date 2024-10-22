@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "receiver-msg-time-req": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
