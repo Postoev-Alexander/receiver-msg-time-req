@@ -20,4 +20,5 @@ RUN dotnet publish "./receiver-msg-time-req.csproj" -c $BUILD_CONFIGURATION -o /
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+EXPOSE 8080
 ENTRYPOINT ["dotnet", "receiver-msg-time-req.dll"]
